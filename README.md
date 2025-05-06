@@ -74,3 +74,54 @@ Create your first JPA entity
 Easily start your REST Web Services
 
 [Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+
+
+
+##DEFINICAO DE REQUISITOS GERADA POR IA
+ome do Projeto: "TaskWise" (sinta-se à vontade para sugerir um nome melhor depois!)
+
+Visão Geral: O TaskWise é um aplicativo web simples e intuitivo que permite aos usuários gerenciar suas tarefas diárias. O objetivo principal é fornecer uma plataforma eficiente para criar, organizar, acompanhar e concluir tarefas.
+
+Público-Alvo: Indivíduos que desejam uma ferramenta simples e eficaz para organizar suas atividades pessoais ou profissionais.
+
+Requisitos Funcionais (O que o sistema deve fazer):
+
+Cadastro e Login de Usuários:
+
+RF01: O sistema deve permitir que novos usuários se cadastrem fornecendo um nome de usuário, endereço de e-mail e senha.
+RF02: O sistema deve permitir que usuários existentes façam login utilizando seu nome de usuário/e-mail e senha.
+RF03: O sistema deve implementar um mecanismo de recuperação de senha (por exemplo, envio de e-mail com link para redefinição).
+RF04: As senhas devem ser armazenadas de forma segura (hash e salt).
+Gerenciamento de Tarefas:
+
+RF05: O sistema deve permitir que usuários criem novas tarefas, definindo um título, uma descrição (opcional) e uma data de vencimento (opcional).
+RF06: O sistema deve permitir que usuários visualizem todas as suas tarefas.
+RF07: O sistema deve permitir que usuários marquem tarefas como concluídas.
+RF08: O sistema deve permitir que usuários editem o título, a descrição e a data de vencimento de uma tarefa existente.
+RF09: O sistema deve permitir que usuários excluam tarefas.
+Organização de Tarefas:
+
+RF10: O sistema deve permitir que usuários categorizem suas tarefas (por exemplo, "Pessoal", "Trabalho", "Estudos").
+RF11: O sistema deve permitir que usuários definam a prioridade de uma tarefa (por exemplo, "Alta", "Média", "Baixa").
+RF12: O sistema deve permitir que usuários filtrem suas tarefas por status (pendentes, concluídas), categoria e prioridade.
+RF13: O sistema deve permitir que usuários ordenem suas tarefas por data de criação, data de vencimento ou prioridade.
+Notificações (MVP Opcional, mas interessante para o futuro):
+
+RF14 (Futuro): O sistema poderia enviar notificações por e-mail ou no aplicativo lembrando os usuários de tarefas com vencimento próximo.
+Regras de Negócio (As políticas e restrições do sistema):
+
+RB01: Cada tarefa deve pertencer a um único usuário.
+RB02: O título da tarefa é obrigatório e deve ter um limite máximo de caracteres (a definir, por exemplo, 100 caracteres).
+RB03: A data de vencimento, se definida, deve ser uma data futura ou o dia atual.
+RB04: Um usuário deve estar logado para criar, visualizar, editar, marcar como concluída ou excluir tarefas.
+RB05: As categorias e prioridades podem ser predefinidas pelo sistema (por exemplo, ao criar uma tarefa, o usuário escolhe entre as opções existentes) ou, em uma versão futura, permitir a criação de novas categorias pelo usuário.
+RB06: Ao marcar uma tarefa como concluída, ela deve ser movida para uma seção de "Tarefas Concluídas" (a forma de visualização fica a seu critério).
+RB07: A exclusão de uma tarefa deve ser uma ação irreversível (talvez com uma confirmação para evitar exclusões acidentais).
+RB08: O nome de usuário e o e-mail devem ser únicos no sistema durante o cadastro.
+Requisitos Não Funcionais (Qualidades do sistema):
+
+RNF01: Desempenho: O sistema deve ser responsivo e carregar as informações rapidamente.
+RNF02: Segurança: As informações dos usuários e das tarefas devem ser armazenadas de forma segura.
+RNF03: Usabilidade: A interface deve ser intuitiva e fácil de usar.
+RNF04: Escalabilidade (Consideração Futura): O sistema deve ser projetado de forma a poder suportar um número crescente de usuários e tarefas no futuro.
+RNF05: Manutenibilidade: O código deve ser bem estruturado e fácil de manter.
